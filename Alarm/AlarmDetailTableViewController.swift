@@ -59,12 +59,12 @@ class AlarmDetailTableViewController: UITableViewController, AlarmScheduler {
         
         enableButton.isHidden = false
         if alarm.enabled {
-            enableButton.setTitle("Disable", for: UIControlState())
-            enableButton.setTitleColor(.white, for: UIControlState())
+            enableButton.setTitle("Disable", for: UIControl.State())
+            enableButton.setTitleColor(.white, for: UIControl.State())
             enableButton.backgroundColor = .red
         } else {
-            enableButton.setTitle("Enable", for: UIControlState())
-            enableButton.setTitleColor(.blue, for: UIControlState())
+            enableButton.setTitle("Enable", for: UIControl.State())
+            enableButton.setTitleColor(.blue, for: UIControl.State())
             enableButton.backgroundColor = .gray
         }
         

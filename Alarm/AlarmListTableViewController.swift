@@ -30,7 +30,7 @@ class AlarmListTableViewController: UITableViewController, SwitchTableViewCellDe
         return cell
     }
 	
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let alarm = AlarmController.shared.alarms[indexPath.row]
 			AlarmController.shared.delete(alarm: alarm)
